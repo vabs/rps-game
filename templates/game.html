@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>GAME</title>
+
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="/static/css/jquery-ui.min.css" rel="stylesheet" type="text/css">
+    <style>
+        ul#options{
+            list-style:none;
+        }
+        ul#options li{
+            float:left;
+        }
+        div.selectMe{
+            border: 1px dashed #F4F4F4;
+            padding-right: 20px;
+            height: 100px;
+            width: 110px;
+        }
+        div.selectMe:hover{
+            border: 1px dashed red;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-xs-2"></div>
+        <div class="col-xs-8">
+            <ul id="options">
+                <li id="r">
+                    <div class="selectMe" style="background:url('/static/images/rock.jpg')"></div>
+                </li>
+                <li id="p">
+                    <div class="selectMe" style="background:url('/static/images/paper.jpg')"></div>
+                </li>
+                <li id="s">
+                    <div class="selectMe" style="background:url('/static/images/scissor.png')"></div>
+                </li>
+            </ul>
+            <br/>
+            <div class="btn btn-success" id="selectVal">Play!</div>
+            <div id="status"></div>
+        </div>
+        <div class="col-xs-2"></div>
+    </div>
+</div>
+
+
+    <script type="text/javascript" src="/static/js/jquery.js"></script>
+    <script type="text/javascript" src="/static/js/bootstrap.js"></script>
+    <script type="text/javascript" src="/static/js/main.js"></script>
+</body>
+</html>
